@@ -14,6 +14,9 @@ body
 
 #header
 {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background-color: bisque;
     box-shadow: black 0 -13px 35px -5px;
 }
@@ -41,7 +44,7 @@ section
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 500px;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
