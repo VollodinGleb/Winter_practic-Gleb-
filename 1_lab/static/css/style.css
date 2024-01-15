@@ -1,0 +1,108 @@
+body
+{
+    background-color: rgb(223, 223, 223);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#page
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#nav
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: bisque; */
+    border: ridge 2px black;
+    /* box-shadow: black 0 -13px 35px -5px; */
+}
+
+#nav-menu
+{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.menu 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+
+    list-style: none;
+}
+
+section
+{
+    display: flex;
+    text-align: center;
+
+    border: ridge 2px black;
+}
+
+.container
+{
+    flex-direction: row;
+    margin: 0 auto;
+    width: 50%;
+}
+
+#Features
+{
+    /* justify-content: center; */
+}
+
+#footer
+{
+    /* width: 100%;
+    position: fixed;
+    bottom: 0; */
+    margin-top: auto;
+    /* background-color: bisque; */
+    border: ridge 2px black;
+}
+
+.container-footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: ridge 2px black;
+    text-decoration: none;
+    list-style: none;
+}
+
+.description
+{
+    flex-direction: column;
+
+    border: ridge 2px black;
+}
+
+.contacts
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-menu
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+}
