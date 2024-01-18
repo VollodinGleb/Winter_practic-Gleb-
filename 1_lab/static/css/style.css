@@ -5,6 +5,15 @@ body
     margin: 0 auto;
 }
 
+*
+{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 #page
 {
     min-height: 100vh;
@@ -14,8 +23,7 @@ body
 
 #nav
 {
-    background-color: #1C1E53;
-    border: ridge 2px black;
+    background-color: #1C1E53;  
     /* box-shadow: black 0 -13px 35px -5px; */
 }
 
@@ -28,59 +36,87 @@ body
     right: 0;
 
     background-color: #1C1E53;
-    /* padding-left: 5%;
-    padding-right: 5%; */
+}
+
+.nav-wrapper
+{
+    display: flex;
+    justify-content: center;
 }
 .nav-menu
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    /* position: relative; */
+    justify-content: flex-end;
+    align-items: center;
+
+    /* margin-left: 2%;
+    margin-right: 2%; */
+    height: 80px;
+    width: 80%;
+}
+
+.nav-logo
+{
+    cursor: pointer;
+    margin-right: auto;
 }
 
 .nav-container
 {
-    width: 50%;
+    width: 70%;
+    margin-right: 3%;
 }
 
 .menu 
 {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
-    
-    /* width: 90%; */
-    padding: 0;
+    justify-content: flex-end;
+
+    /* padding: 0; */
+    gap: 5%;
 
     list-style: none;
 }
 
-.menu > li
+.menu > .item
 {
     color: #BBBBCB;
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* margin-left: auto; */
 
-    font-size: medium;
-    font-weight: 500;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contact-us
+.item:hover
 {
-    /* width: 50%; */
-    /* margin: auto; */
+    color: #FFFFFF;
 }
 
-.button
+button
 {
-    /* margin: auto; */
+    width: 185px;
+    height: 60px;
+    padding: 9px 20px ;
+    flex-shrink: 0;
+    
+    cursor: pointer;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    background-color: #1C1E53;
+    color: #FFFFFF;
 }
-.contact
+
+button:hover
 {
-    /* margin: auto; */
+    background-color: #1f2279;
 }
 
 .header
