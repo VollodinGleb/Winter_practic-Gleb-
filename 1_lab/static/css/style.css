@@ -5,12 +5,16 @@ body
     margin: 0 auto;
 }
 
+:root{
+    --backcolor: hsla(238, 59%, 30%, 0.897);
+}
+
 *
 {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px; /* 175% */
+    line-height: 28px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -29,20 +33,22 @@ body
 
 #main-nav-menu
 {
-    width: 100%;
+    display: inline;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
+    transition: top 0.3s;
 
     background-color: #1C1E53;
 }
 
-.nav-wrapper
+#main-nav-menu.scrolled
 {
-    display: flex;
-    justify-content: center;
+    background-color: hsla(238, 59%, 30%, 0.95);
 }
+
 .nav-menu
 {
     display: flex;
@@ -50,10 +56,9 @@ body
     justify-content: flex-end;
     align-items: center;
 
-    /* margin-left: 2%;
-    margin-right: 2%; */
+    margin: auto;
     height: 80px;
-    width: 80%;
+    width: 90%;
 }
 
 .nav-logo
@@ -100,9 +105,9 @@ body
     color: #FFFFFF;
 }
 
-button
+.cta-button
 {
-    width: 185px;
+    /* width: 100%; */
     height: 60px;
     padding: 9px 20px ;
     flex-shrink: 0;
@@ -114,9 +119,84 @@ button
     color: #FFFFFF;
 }
 
-button:hover
+.cta-button:hover
 {
-    background-color: #1f2279;
+    background-color: hsl(238, 59%, 30%);
+}
+
+.navigation-toggle
+{
+    display: none;
+}
+
+.bar
+{
+    display: block;
+
+    margin: 6px 0;
+    width: 22px;
+    height: 2.5px;
+    background-color: #BBBBCB;
+}
+
+.responsive-menu 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(238, 59%, 30%, 0.897);
+    z-index: 1000; /* велике значення z-index, щоб виводити над іншими елементами */
+}
+
+.cross-click > span
+{
+    content: "\00D7";
+    font-size: 50px;
+    color:#BBBBCB;
+    position: fixed;
+    right: 40px;
+    top: 30px;
+}
+
+.cross-click > span:hover
+{
+    color: #fff;
+}
+
+.menu-container
+{
+    margin: 3em 0 5em 0;
+}
+
+.responsive-navbar
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    list-style: none;
+}
+
+.responsive-navbar > .item
+{
+    color: #BBBBCB;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    margin: 30px 0 30px 0;
+}
+
+.responsive-navbar > .item:hover
+{
+    color: #FFFFFF;
 }
 
 .header
@@ -244,8 +324,26 @@ section
     list-style: none;
     gap: 10px;
 }
+@media screen and (max-width: 1100px){
+    .navigation-toggle {
+        display: block;
+        margin-left: 10px;
+        background-color: #1C1E53;
+        border: none;
+    }
 
-@media (max-width: 550px)
+
+    .responsive-menu.active 
+    {
+        display: block;
+    }
+
+    .nav-container
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 725px)
 {
     .container-bottom
     {
@@ -253,6 +351,6 @@ section
     }
     .footer-menu
     {
-        padding-top: 10px;
+        display: none;
     }
 }
