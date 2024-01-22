@@ -1,31 +1,44 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const ToggleButton = document.querySelector('.navigation-toggle');
-    const ResponsiveMenu = document.querySelector('.responsive-menu');
-    const MainNavMenu = document.querySelector('#main-nav-menu');
-    const NavContainer = document.querySelector('.nav-container');
-    var prevScrollpos = window.scrollY;
+    const toggleButton = document.querySelector('.navigation-toggle');
+    const responsiveMenu = document.querySelector('.responsive-menu');
+    const crossButton = document.querySelector('.cross-click');
+    const mainNavMenu = document.querySelector('#main-nav-menu');
+    const navContainer = document.querySelector('.nav-container');
+    
+    let prevScrollPos = window.scrollY;
 
-    ToggleButton.addEventListener('click', function () {
-        ResponsiveMenu.classList.toggle('active');
+    toggleButton.addEventListener('click', function () {
+        responsiveMenu.classList.toggle('active');
+        mainNavMenu.style.display = "none";
+
     });
+
+    crossButton.addEventListener('click', function() {
+        responsiveMenu.classList.remove('active');
+        mainNavMenu.style.display = "inline";
+    })
 
     window.addEventListener('resize', function () {
-        if (window.innerWidth > parseInt(getComputedStyle(document.documentElement).getPropertyValue('--max-width-for-toggle'))) {
-            ResponsiveMenu.classList.remove('active');
-            NavContainer.style.display = '';
+        if (window.innerWidth > 1100) {
+            responsiveMenu.classList.remove('active');
+            navContainer.style.display = 'inline';
+            mainNavMenu.style.display = "inline";
+        } else {
+            navContainer.style.display = 'none';
         }
     });
-    
-    window.addEventListener('scroll', function(){
-        var currentScrollPos = this.window.scrollY;
 
-        MainNavMenu.classList.toggle('scrolled', window.scrollY > 600);
+    window.addEventListener('scroll', function () {
+        const currentScrollPos = window.scrollY;
 
-        if (prevScrollpos > currentScrollPos) {
-            MainNavMenu.style.top = "0";
-        }else {
-            MainNavMenu.style.top = "-100px";
+        mainNavMenu.classList.toggle('scrolled', window.scrollY > 700);
+
+        if (prevScrollPos > currentScrollPos) {
+            mainNavMenu.style.top = "0";
+        } else {
+            mainNavMenu.style.top = "-100px";
         }
-        prevScrollpos = currentScrollPos;
-    })
+
+        prevScrollPos = currentScrollPos;
+    });
 });

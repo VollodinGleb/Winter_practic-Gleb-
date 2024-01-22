@@ -33,6 +33,7 @@ body
 
 #main-nav-menu
 {
+    display: inline;
     position: fixed;
     width: 100%;
     top: 0;
@@ -45,7 +46,7 @@ body
 
 #main-nav-menu.scrolled
 {
-    background-color: hsla(238, 59%, 30%, 0.999);
+    background-color: hsla(238, 59%, 30%, 0.95);
 }
 
 .nav-menu
@@ -57,7 +58,7 @@ body
 
     margin: auto;
     height: 80px;
-    width: 80%;
+    width: 90%;
 }
 
 .nav-logo
@@ -128,6 +129,16 @@ body
     display: none;
 }
 
+.bar
+{
+    display: block;
+
+    margin: 6px 0;
+    width: 22px;
+    height: 2.5px;
+    background-color: #BBBBCB;
+}
+
 .responsive-menu 
 {
     display: none;
@@ -142,9 +153,24 @@ body
     z-index: 1000; /* велике значення z-index, щоб виводити над іншими елементами */
 }
 
+.cross-click > span
+{
+    content: "\00D7";
+    font-size: 50px;
+    color:#BBBBCB;
+    position: fixed;
+    right: 40px;
+    top: 30px;
+}
+
+.cross-click > span:hover
+{
+    color: #fff;
+}
+
 .menu-container
 {
-    margin: 5em 0 5em 0;
+    margin: 3em 0 5em 0;
 }
 
 .responsive-navbar
@@ -301,7 +327,11 @@ section
 @media screen and (max-width: 1100px){
     .navigation-toggle {
         display: block;
+        margin-left: 10px;
+        background-color: #1C1E53;
+        border: none;
     }
+
 
     .responsive-menu.active 
     {
