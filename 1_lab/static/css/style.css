@@ -15,6 +15,20 @@ body
     margin: 0 auto;
 }
 
+h2
+{
+    font-size: 48px;
+}
+
+p
+{
+    color: #6a6a74;
+}
+
+a
+{
+    font-size: 18px;
+}
 #page
 {
     min-height: 100vh;
@@ -329,6 +343,11 @@ section
     width: 85%;
 }
 
+.wrap-heading > a
+{
+    color: #2405F2;
+}
+
 .cards
 {
     display: grid;
@@ -344,12 +363,16 @@ section
 {
     width: 70%;
     height: 200px;
-    border: ridge 1px black;
+}
+
+.card > h3
+{
+    font-size: 32px;
 }
 
 .card > p
 {
-    font-size: 10px
+    font-size: 16px;
 }
 
 
