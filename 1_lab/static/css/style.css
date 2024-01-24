@@ -291,10 +291,11 @@ section
 .container
 {
     margin: 0 auto;
+    margin-bottom: 30px;
     /* text-align: center; */
-    width: 85%;
+    /* width: 95%; */
     /* height: 300px; */
-    min-height: 300px;
+    min-height: 500px;
 
     border: ridge 2px black;
 }
@@ -325,13 +326,33 @@ section
 .wrap-heading
 {
     /* text-align: center; */
-    width: 65%;
+    width: 85%;
 }
 
 .cards
 {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1em));
+    column-gap: 10px;
+    row-gap: 5px;
+    width: 45%;
+    justify-items: center;
+    justify-content: center;
 }
+
+.card
+{
+    width: 70%;
+    height: 200px;
+    border: ridge 1px black;
+}
+
+.card > p
+{
+    font-size: 10px
+}
+
+
 
 #Features
 {
