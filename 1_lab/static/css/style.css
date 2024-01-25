@@ -311,7 +311,7 @@ section
     /* height: 300px; */
     min-height: 500px;
 
-    border: ridge 2px black;
+    /* border: ridge 2px black; */
 }
 
 #How-work
@@ -341,6 +341,7 @@ section
 {
     /* text-align: center; */
     width: 85%;
+    margin-bottom: 30px;
 }
 
 .wrap-heading > a
@@ -467,11 +468,25 @@ section
     list-style: none;
     gap: 10px;
 }
+
+@media screen and (max-width: 1400px){
+    .cards
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1em));
+        column-gap: 120px;
+        row-gap: 5px;
+    }
+    .card
+    {
+        width: 200px;
+        height: 300px;
+    }
+}
 @media screen and (max-width: 1100px){
     .navigation-toggle {
         display: block;
         margin-left: 10px;
-        background-color: #1C1E53;
+        background-color: hsla(238, 59%, 30%, 0.0);
         border: none;
     }
 
@@ -486,6 +501,11 @@ section
         display: none;
     }
     .header-description > *
+    {
+        text-align: center;
+    }
+
+        .container
     {
         text-align: center;
     }
