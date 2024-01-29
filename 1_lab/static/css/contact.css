@@ -6,9 +6,48 @@
 {
     margin: 0 auto;
     margin-bottom: 30px;
-    text-align: center;
+    /* text-align: center; */
     /* width: 95%; */
     /* height: 300px; */
     min-height: 500px;
     /* border: ridge 2px black; */
+}
+
+.contact-heading
+{
+    text-align: center;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 50%;
+
+    background-color: #F4F6FC;
+    padding: 15px 15px 15px 35px;
+    border-radius: 1%;
+}
+
+.wrap-boxes
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.right-box, .left-box
+{
+    width: 50%;
+}
+
+label > input
+{
+    width: 90%;
+}
+
+.wrap-button > a
+{
+    /* Add border, background-color */
 }
