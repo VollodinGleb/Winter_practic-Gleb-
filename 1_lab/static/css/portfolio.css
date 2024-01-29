@@ -1,0 +1,130 @@
+.header-portfolio
+{
+    height: 40vh; 
+}
+
+.wrap-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.wrap-container > *
+{
+    margin: auto;
+}
+.header-description
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.header-description > *
+{
+    width: 70%;
+}
+.header-description > h1
+{
+    font-size: 50px;
+    line-height: 50px;
+}
+.header-description > p
+{
+    color: #6a6a74;
+}
+
+.link-socials
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+#Our-portfolio > .container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-projects
+{
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    margin-top: 50px;
+}
+
+.wrap-project-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.wrap-card > a 
+{
+    color: #2405F2;
+}
+
+.cta-section
+{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.wrap-cta-section
+{
+    text-align: center;
+}
+
+.wrap-cta-section > h1
+{
+    font-size: 48px;
+    line-height: 50px;
+}
+
+@media screen and (max-width: 725px)
+{   
+
+    #nav-portfolio
+    {
+        height: 100vh;
+    }
+    .header-portfolio
+    {
+        height: 100vh;
+    }
+    
+    .wrap-project-cards
+    {
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-description > h1,
+    .wrap-cta-section > h1
+    {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 290px)
+{
+    .wrap-project-cards
+    {
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    }
+}
