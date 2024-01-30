@@ -17,17 +17,25 @@
 {
     text-align: center;
 }
+
+.container-contact
+{
+    margin-top: 70px;
+    margin-bottom: 170px;
+}
 form
 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: auto;
-    width: 50%;
+    width: 70%;
 
     background-color: #F4F6FC;
     padding: 15px 15px 15px 35px;
-    border-radius: 1%;
+    border-radius: 10px;
+    
+    text-align: start;
 }
 
 .wrap-boxes
@@ -39,15 +47,73 @@ form
 }
 .right-box, .left-box
 {
-    width: 50%;
+    min-width: 50%;
 }
 
-label > input
+label > input,
+label > textarea
 {
     width: 90%;
+    border-radius: 5px;
+    border: solid 1px #ababb9;
+    padding: 10px;
+    font-size: 16px;
 }
 
+label > textarea
+{
+    width: 95%;
+}
+label > p
+{
+    color: black;
+    font-weight: 700;
+}
+
+.wrap-button
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .wrap-button > a
 {
-    /* Add border, background-color */
+    display: inline-block;
+    text-align: center;
+    padding: 15px 10px 15px;
+    min-width: 200px;
+    border-radius: 30px;
+    background-color: #282938;
+    color: #ffff;
+}
+
+.wrap-button > a:hover
+{
+    background-color: #4b4d69;
+}
+
+@media screen and (max-width: 704px){
+    form
+    {
+        width: auto;
+        align-items: center;
+    }
+    .right-box, .left-box
+    {
+        min-width: 100%;
+    }
+    .wrap-textarea
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .right-box, .left-box
+    {
+        min-width: 95%;
+    }
+    label > input
+    {
+        width: 90%;
+    }
 }
