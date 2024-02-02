@@ -2,7 +2,7 @@ export default function NavBar( {logo} ) {
     return (
         <nav id="main-nav-menu" >
             <div className="nav-menu">
-                <img src={logo} alt="logo" className="nav-logo"/>
+                <img src={logo} alt="logo" className="logo"/>
                 <div className="nav-container">
                     <ul className="menu">
                         <li className="item"><a href="index.html">Home</a></li>

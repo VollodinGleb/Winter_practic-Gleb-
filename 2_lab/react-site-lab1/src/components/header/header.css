@@ -34,7 +34,7 @@
     width: 90%;
 }
 
-.nav-logo
+.logo
 {
     cursor: pointer;
     margin-right: auto;
@@ -165,85 +165,6 @@
     color: #FFFFFF;
 }
 
-/* ############################ */
-.header
-{
-    color: #fff;
-    height: 100vh; 
-}
-
-.wrap-container
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 100%;
-}
-
-.wrap-container > *
-{
-    margin: auto;
-}
-.header-description
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.header-description > *
-{
-    width: 70%;
-}
-.header-description > h1
-{
-    font-size: 50px;
-    line-height: 50px;
-}
-.header-description > p
-{
-    color: #BBBBCB;
-}
-
-.link-buttons
-{
-    margin-top: 55px;
-}
-
-.radius-button
-{
-    display: inline-block;
-    padding: 15px 10px 15px;
-    min-width: 200px;
-    border-radius: 30px;
-
-    text-align: center;
-    background-color: #FCD980;
-    color: #000;
-}
-
-.radius-button:hover
-{
-    background-color: #fdd05d;
-}
-
-.arrow-button
-{
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
-    margin-left: 25px;
-
-    text-align: center;
-    color: #fff;
-}
-
-#right-arrow
-{
-    font-size: 22px;
-}
-
 @media screen and (max-width: 1100px){
     .navigation-toggle {
         display: block;
@@ -261,9 +182,5 @@
     .nav-container
     {
         display: none;
-    }
-    .header-description > *
-    {
-        text-align: center;
     }
 }

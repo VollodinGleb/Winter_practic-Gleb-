@@ -34,3 +34,10 @@ a
     font-size: 18px;
     color: #000;
 }
+
+#content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
