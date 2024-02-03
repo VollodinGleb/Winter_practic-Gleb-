@@ -1,3 +1,14 @@
+/* Cards */
+.work-cards,
+.feature-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    justify-items: center;
+    justify-content: center;
+}
+
+/* Home header */
 .header
 {
     color: #fff;
@@ -76,9 +87,75 @@
     font-size: 22px;
 }
 
+/* How we work */
+#How-work > .container
+{
+    flex-direction: row;
+    align-items: baseline;
+    /* text-align: center; */
+}
+.work-heading > .wrap-heading
+{
+    width: 85%;
+    margin: auto;
+}
+
+.work-cards
+{
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+/* Features */
+#Features
+{
+    background-color: #F4F6FC;
+}
+
+.feature-cards
+{
+    gap: 50px;
+}
+
+.feature-cards > .card
+{
+    background-color: #FFFFFF;
+}
+
+/* Our projects */
+
+/* Our blog */
+
+@media screen and (max-width: 1365px){
+    #How-work > .container
+    {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 1100px){
     .header-description > *
     {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-description > *
+    {
+        width: auto;
+    }
+
+    .header-description > h1
+    {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .work-cards,
+    .feature-cards
+    {
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
     }
 }

@@ -1,10 +1,10 @@
 import NavBar from './headerComponents/NavBar';
-import logo from '../../logo.svg';
+import logo from '../../svg/logo.svg';
 import './header.css';
 
 export default function Header({ children }) {
     return (
-        <header id="nav" style={{height: "100vh"}}>
+        <header id="nav">
             <NavBar logo={logo}></NavBar>
             <div className="responsive-menu">
                 <div className="cross-click">
@@ -12,8 +12,8 @@ export default function Header({ children }) {
                 </div>
                 <div className="menu-container">
                     <ul className="responsive-navbar">
-                        <li className="responsive-item"><a href="index.html">Home</a></li>
-                        <li className="responsive-item"><a href="aboutUs.html">About us</a></li>
+                        <li className="responsive-item"><a href="">Home</a></li>
+                        <li className="responsive-item"><a href="">About us</a></li>
                         <li className="responsive-item"><a href="">Features</a></li>
                         <li className="responsive-item"><a href="">Pricing</a></li>
                         <li className="responsive-item"><a href="">FAQ</a></li>

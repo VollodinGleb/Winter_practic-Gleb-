@@ -1,3 +1,5 @@
+import './card.css';
+
 export default function Card({ image, title, text }) {
     return (
         <div class="card">

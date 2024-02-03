@@ -15,7 +15,6 @@ body
     margin: 0 auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* text-align: center; */
 }
 
 h2
@@ -40,4 +39,30 @@ a
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+    min-height: 500px;
+}
+
+@media screen and (max-width: 690px) {
+    *
+    {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    h1, h2
+    {
+        font-size: 30px;
+    }
 }

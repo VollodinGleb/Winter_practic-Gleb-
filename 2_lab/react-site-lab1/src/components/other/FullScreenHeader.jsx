@@ -6,8 +6,10 @@ export default function FullScreenHeader({ children }) {
 
                     <h1>Building stellar websites for early startups</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt.
+                        Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Soluta perspiciatis 
+                        enim itaque ratione esse? Officiis, 
+                        culpa quisquam.
                     </p>
                     <div className="link-buttons">
                         <a className="radius-button" href="">Vie our work</a>
