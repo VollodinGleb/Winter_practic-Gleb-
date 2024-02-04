@@ -94,9 +94,9 @@
     align-items: baseline;
     /* text-align: center; */
 }
-.work-heading > .wrap-heading
+.wrap-heading
 {
-    width: 85%;
+    width: 70%;
     margin: auto;
 }
 
@@ -111,6 +111,12 @@
 {
     background-color: #F4F6FC;
 }
+
+/* .features-heading > .wrap-heading
+{
+    width: 70%;
+    margin: auto;
+} */
 
 .feature-cards
 {
@@ -152,7 +158,7 @@
     }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 330px) {
     .work-cards,
     .feature-cards
     {

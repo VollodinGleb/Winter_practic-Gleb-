@@ -1,0 +1,142 @@
+#footer
+{
+    bottom: 0;
+    margin-top: auto;
+    
+    background-color: #1C1E53;
+}
+
+.container-footer
+{
+    
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+
+.weight-wrap
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 2em;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.discription
+{
+    margin: auto;
+    width: 50%;
+
+    /* border: ridge 2px black; */
+    color: #FFFFFF;
+}
+
+.discription > p, .contacts > p
+{
+    color: #BBBBCB;
+}
+
+.contacts
+{
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+    width: 50%;
+
+    color: #FFFFFF;
+}
+
+.contacts > .wrap-container
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    padding: 15px 10px;
+    background-color: #FCD980;
+}
+
+.contacts > .wrap-container a
+{
+    font-weight: 800;   
+}
+
+.social-networks
+{
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    margin-bottom: 20px;
+}
+
+.footer-bottom
+{
+    padding: 20px 20px 20px 20px;
+    
+    background-color: #FFFFFF;
+}
+
+.container-bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    
+    flex-wrap: wrap;
+
+    color: #000;
+}
+
+.container-bottom > .menu
+{
+    gap: 4.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.container-bottom > .menu .item a
+{
+    color: #000;
+}
+
+.item:hover
+{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px){
+    .container-bottom
+    {
+        justify-content: center; 
+    }
+    .menu
+    {
+        display: none
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .social-networks
+    {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contacts > .wrap-container a
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .weight-wrap
+    {
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    }
+}

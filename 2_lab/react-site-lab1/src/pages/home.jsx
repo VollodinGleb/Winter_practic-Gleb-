@@ -7,6 +7,7 @@ import Section from '../components/section/Section';
 import '../style/home.css'
 import pointer1 from '../svg/cards/work/pointer1.svg'
 import clients from '../svg/cards/features/clients.svg'
+import Footer from '../components/footer/Footer';
 
 export default function Home() {
     return (
@@ -84,6 +85,10 @@ export default function Home() {
                     </WrapContainer>
                 </Section>
             </main>
+
+            <Footer>
+                
+            </Footer>
         </>
     );
 }

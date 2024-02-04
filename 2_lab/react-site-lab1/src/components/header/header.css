@@ -86,6 +86,7 @@
 
 .cta-button:hover
 {
+    border-color: #83838d;
     background-color: hsl(238, 59%, 30%);
 }
 
@@ -182,5 +183,18 @@
     .nav-container
     {
         display: none;
+    }
+}
+@media screen and (max-width: 330px) {
+    .logo
+    {
+        width: 40%;;
+    }
+    .cta-button {
+        padding: 5px 10px;
+    }
+    .navigation-toggle
+    {
+        margin: 0;
     }
 }
