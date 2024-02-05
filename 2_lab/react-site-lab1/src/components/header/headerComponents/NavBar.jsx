@@ -11,7 +11,8 @@ export default function NavBar( {logo} ) {
                 
                 </div>
 
-                <a className="cta-button" href="contuctUs.html">Contact us</a>
+                <a className="cta-button" href="">Contact us</a>
+                
                 <button className="navigation-toggle">
                     <span className="bar"></span>
                     <span className="bar"></span>

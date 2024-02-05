@@ -1,7 +1,7 @@
 import logo from '../../svg/logo.svg'
-import Menu from '../header/headerComponents/Menu';
 import SocialLinks from '../other/SocialLinks';
-import WrapContainer from '../other/WrapContainer';
+// import WrapContainer from '../other/WrapContainer';
+import BottomFooter from './BottomFooter';
 import './footer.css'
 
 export default function Footer() {
@@ -24,23 +24,22 @@ export default function Footer() {
                         
                         <SocialLinks />
                         
-                        <WrapContainer>
-                            <a href="https://mail.google.com" className="email">contact@website.com</a>
-                            <a href="" className="phone">0927 6277 28525</a>
-                        </WrapContainer>
+                        {/* <WrapContainer>
+                            <div className="email">
+                                <p>Email:</p>
+                                <a href="https://mail.google.com">contact@website.com</a>
+                            </div>
+                            <div className="phone">
+                                <p>Phone:</p>
+                                <a href="">0927 6277 28525</a>
+                            </div>
+                        </WrapContainer> */}
                     </div>
                 </div>
             </div>
-            <div className="footer-bottom">
-                <div className="container-bottom">
-                    <div>
-                        <span>Copyright 2022, Finsweet.com</span>
-                    </div>
-                    
-                    <Menu />
-                
-                </div>
-            </div>
+
+            <BottomFooter />
+            
         </footer>
     );
 }

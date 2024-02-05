@@ -112,6 +112,10 @@
     background-color: #F4F6FC;
 }
 
+.features-heading
+{
+    text-align: center;
+}
 /* .features-heading > .wrap-heading
 {
     width: 70%;
