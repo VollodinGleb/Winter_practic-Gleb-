@@ -1,5 +1,5 @@
-import logo from '../../svg/logo.svg'
-import SocialLinks from '../other/SocialLinks';
+import logo from './../../assets/logo.svg';
+import SocialIcons from '../other/SocialLinks';
 // import WrapContainer from '../other/WrapContainer';
 import BottomFooter from './BottomFooter';
 import './footer.css'
@@ -22,7 +22,7 @@ export default function Footer() {
                             online presence and help with your UX/UI design challenges.
                         </p>
                         
-                        <SocialLinks />
+                        <SocialIcons/>
                         
                         {/* <WrapContainer>
                             <div className="email">

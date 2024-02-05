@@ -1,5 +1,5 @@
 import NavBar from './headerComponents/NavBar';
-import logo from '../../svg/logo.svg';
+import logo from './../../assets/logo.svg';
 import './header.css';
 
 export default function Header({ children }) {

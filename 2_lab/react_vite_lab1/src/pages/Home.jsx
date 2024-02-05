@@ -5,8 +5,8 @@ import WrapContainer from '../components/other/WrapContainer';
 import Heading from '../components/section/Heading';
 import Section from '../components/section/Section';
 import '../style/home.css'
-import pointer1 from '../svg/cards/work/pointer1.svg'
-import clients from '../svg/cards/features/clients.svg'
+import pointer1 from '../assets/cards/work/pointer1.svg'
+import clients from '../assets/cards/features/clients.svg'
 import Footer from '../components/footer/Footer';
 
 export default function Home() {
