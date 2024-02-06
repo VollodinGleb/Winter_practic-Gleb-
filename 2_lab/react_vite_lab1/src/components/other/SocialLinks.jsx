@@ -1,24 +1,29 @@
 import styled from 'styled-components';
+import facebook from '../../assets/social/facebook.svg'
 
-const Social = styled.div`
+const Social = styled.ul`
     display: flex;
     flex-direction: row;
     justify-content: ${(props) => props.justify || 'start'};
-    gap: 15%;
+    gap: 10%;
     margin-bottom: 20px;
-
-    @media screen and (max-weight: 675px) {
-        
-    }
+    padding: 0;
+    list-style: none;
 `
+
+function Icon({ icon, href }) {
+    return (
+        <li><a href={href}><img src={icon} alt="" /></a></li>
+    );
+}
 
 export default function SocialIcons({ justify }) {
     return (
         <Social className='social-icons' justify={justify}>
-            <li><a href="https://www.facebook.com/">@</a></li>
-            <li><a href="https://twitter.com/">@</a></li>
-            <li><a href="https://www.instagram.com/">@</a></li>
-            <li><a href="https://linkedin.com/">@</a></li>
+            <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
+            <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
+            <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
+            <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
         </Social>
     );
 }
