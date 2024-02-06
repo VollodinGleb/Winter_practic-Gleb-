@@ -1,0 +1,200 @@
+#nav
+{
+    background-color: #1C1E53;  
+    /* box-shadow: black 0 -13px 35px -5px; */
+}
+
+#main-nav-menu
+{
+    display: inline;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: top 0.3s;
+
+    background-color: #1C1E53;
+}
+
+#main-nav-menu.scrolled
+{
+    background-color: hsla(238, 59%, 30%, 0.95);
+}
+
+.nav-menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: auto;
+    height: 80px;
+    width: 90%;
+}
+
+.logo
+{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-container
+{
+    width: 70%;
+    margin-right: 3%;
+}
+
+.menu 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    gap: 5%;
+
+    list-style: none;
+}
+
+.item > a
+{
+    color: #BBBBCB;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.item > a:hover
+{
+    color: #FFFFFF;
+}
+
+.cta-button
+{
+    padding: 15px 20px ;
+    flex-shrink: 0;
+    
+    cursor: pointer;
+    border-radius: 41px;
+    border: 2px solid rgba(244, 246, 252, 0.20);
+    background-color: #1C1E53;
+    color: #FFFFFF;
+}
+
+.cta-button:hover
+{
+    border-color: #83838d;
+    background-color: hsl(238, 59%, 30%);
+}
+
+.navigation-toggle
+{
+    display: none;
+}
+
+.bar
+{
+    display: block;
+
+    margin: 6px 0;
+    width: 22px;
+    height: 2.5px;
+    background-color: #BBBBCB;
+}
+
+.responsive-menu 
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(238, 59%, 30%, 0.897);
+    z-index: 1000; /* велике значення z-index, щоб виводити над іншими елементами */
+}
+
+.cross-click > span
+{
+    content: "\00D7";
+    font-size: 50px;
+    color:#BBBBCB;
+    position: fixed;
+    right: 40px;
+    top: 30px;
+}
+
+.cross-click > span:hover
+{
+    color: #fff;
+}
+
+.menu-container
+{
+    margin: 3em 0 5em 0;
+}
+
+.responsive-navbar
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    list-style: none;
+}
+
+.responsive-item
+{
+    margin: 30px 0 30px 0;
+}
+
+.responsive-item > a
+{
+    color: #BBBBCB;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+}
+
+.responsive-item > a:hover
+{
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1100px){
+    .navigation-toggle {
+        display: block;
+        margin-left: 10px;
+        background-color: hsla(238, 59%, 30%, 0.0);
+        border: none;
+    }
+
+
+    .responsive-menu.active 
+    {
+        display: block;
+    }
+
+    .nav-container
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 330px) {
+    .logo
+    {
+        width: 40%;;
+    }
+    .cta-button {
+        padding: 5px 10px;
+    }
+    .navigation-toggle
+    {
+        margin: 0;
+    }
+}

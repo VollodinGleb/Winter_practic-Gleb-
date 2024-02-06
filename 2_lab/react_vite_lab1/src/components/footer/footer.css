@@ -1,0 +1,150 @@
+#footer
+{
+    bottom: 0;
+    margin-top: auto;
+    
+    background-color: #1C1E53;
+}
+
+.container-footer
+{
+    
+    text-decoration: none;
+    list-style: none;
+
+    
+}
+
+.weight-wrap
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 2em;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.discription,
+.contacts
+{
+    margin: auto;
+    color: #FFFFFF;
+    width: 70%;
+}
+
+.discription > p, .contacts > p
+{
+    color: #BBBBCB;
+}
+
+.contacts
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts-block
+{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 350px;
+    padding: 5px 5px 5px 15px;
+    background-color: #FCD980;
+}
+
+.contacts-block a
+{
+    font-weight: 800;   
+    padding-left: 5%;
+}
+
+.email, 
+.phone
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-bottom
+{
+    padding: 20px 20px 20px 20px;
+    
+    background-color: #FFFFFF;
+}
+
+.container-bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    
+    flex-wrap: wrap;
+
+    color: #000;
+}
+
+.container-bottom > .menu
+{
+    gap: 4.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.container-bottom > .menu .item a
+{
+    color: #000;
+}
+
+.item:hover
+{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px){
+    .container-bottom
+    {
+        justify-content: center; 
+    }
+    .menu
+    {
+        display: none
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .discription,
+    .contacts
+    {
+        width: auto;    
+    }
+    .contacts > div,
+    .email, 
+    .phone
+    {
+        justify-content: center;
+    }
+    
+    .contacts-block
+    {
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .contacts > .wrap-container a
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .weight-wrap
+    {
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    }
+}
