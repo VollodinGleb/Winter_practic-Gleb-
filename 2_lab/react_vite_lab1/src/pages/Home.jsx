@@ -7,6 +7,9 @@ import Section from '../components/section/Section';
 import '../style/home.css'
 import pointer1 from '../assets/cards/work/pointer1.svg'
 import clients from '../assets/cards/features/clients.svg'
+import hands from '../assets/blog/hands.jpg'
+import computers from '../assets/blog/computers.jpg'
+import PCperson from '../assets/blog/PCperson.jpg'
 import Footer from '../components/footer/Footer';
 
 export default function Home() {
@@ -81,7 +84,17 @@ export default function Home() {
                     </Heading>
 
                     <WrapContainer>
-                        {/* Create blog CARD component */}
+                        <div className="blog-cards">
+                            <Card image={hands} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
+                                "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
+                                }></Card>
+                            <Card image={computers} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
+                                "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
+                                }></Card>
+                            <Card image={PCperson} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
+                                "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
+                                }></Card>
+                        </div>
                     </WrapContainer>
                 </Section>
             </main>

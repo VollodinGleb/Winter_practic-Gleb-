@@ -3,6 +3,7 @@ import SocialIcons from '../other/SocialLinks';
 // import WrapContainer from '../other/WrapContainer';
 import BottomFooter from './BottomFooter';
 import './footer.css'
+import ContactsBlock from '../other/ContactsBlock';
 
 export default function Footer() {
     return (
@@ -23,17 +24,9 @@ export default function Footer() {
                         </p>
                         
                         <SocialIcons/>
+
+                        <ContactsBlock />
                         
-                        {/* <WrapContainer>
-                            <div className="email">
-                                <p>Email:</p>
-                                <a href="https://mail.google.com">contact@website.com</a>
-                            </div>
-                            <div className="phone">
-                                <p>Phone:</p>
-                                <a href="">0927 6277 28525</a>
-                            </div>
-                        </WrapContainer> */}
                     </div>
                 </div>
             </div>

@@ -1,6 +1,7 @@
 /* Cards */
 .work-cards,
-.feature-cards
+.feature-cards,
+.blog-cards
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
@@ -92,7 +93,6 @@
 {
     flex-direction: row;
     align-items: baseline;
-    /* text-align: center; */
 }
 .wrap-heading
 {
@@ -135,6 +135,20 @@
 /* Our projects */
 
 /* Our blog */
+#Our-blog
+{
+    background-color: #F4F6FC;
+}
+
+.blog-cards
+{
+    gap: 50px;
+}
+
+.blog-cards > .card
+{
+    background-color: #FFFFFF;
+}
 
 @media screen and (max-width: 1365px){
     #How-work > .container
@@ -164,7 +178,8 @@
 
 @media screen and (max-width: 330px) {
     .work-cards,
-    .feature-cards
+    .feature-cards,
+    .blog-cards
     {
         grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
     }
