@@ -13,7 +13,10 @@ export default function Footer() {
                     <div className="discription">
                         <img src={logo} alt="logo" />
                         <p>
-                            We are always open to discuss your project and improve your online presence.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                            In aut vitae eligendi, ducimus mollitia fuga totam 
+                            distinctio quis sed sit animi, minima ad neque, 
+                            fugit facilis sapiente labore tenetur iure?
                         </p>
                     </div>
                     <div className="contacts">

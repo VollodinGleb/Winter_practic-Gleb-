@@ -10,6 +10,7 @@ import clients from '../assets/cards/features/clients.svg'
 import hands from '../assets/blog/hands.jpg'
 import computers from '../assets/blog/computers.jpg'
 import PCperson from '../assets/blog/PCperson.jpg'
+import project1 from '../assets/projects/1project.jpg'
 import Footer from '../components/footer/Footer';
 
 export default function Home() {
@@ -74,7 +75,17 @@ export default function Home() {
                     </Heading>
 
                     <WrapContainer>
-                        {/* Create container BLOCK component */}
+                        <div className="project-blocks">
+                            <Card image={project1} title={"Project1"} text={
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque necessitatibus suscipit assumenda veritatis atque sunt, minus nesciunt nostrum aperiam."
+                        }><a href="">View More<span id="right-arrow">&#8594;</span></a></Card>
+                            <Card image={project1} title={"Project1"} text={
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque necessitatibus suscipit assumenda veritatis atque sunt, minus nesciunt nostrum aperiam."
+                        }><a href="">View More<span id="right-arrow">&#8594;</span></a></Card>
+                            <Card image={project1} title={"Project1"} text={
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque necessitatibus suscipit assumenda veritatis atque sunt, minus nesciunt nostrum aperiam."
+                        }><a href="">View More<span id="right-arrow">&#8594;</span></a></Card>
+                        </div>
                     </WrapContainer>
                 </Section>
 
@@ -85,23 +96,27 @@ export default function Home() {
 
                     <WrapContainer>
                         <div className="blog-cards">
-                            <Card image={hands} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
+                            <Card image={hands} date={"19 Jan 2022"} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
                                 "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
-                                }></Card>
-                            <Card image={computers} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
+                                }>
+                                    <a href="">Read More<span id="right-arrow">&#8594;</span></a>
+                                </Card>
+                            <Card image={computers} date={"19 Jan 2022"} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
                                 "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
-                                }></Card>
-                            <Card image={PCperson} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
+                                }>
+                                    <a href="">Read More<span id="right-arrow">&#8594;</span></a>
+                                </Card>
+                            <Card image={PCperson} date={"19 Jan 2022"} title={"How one Webflow user grew his single person consultancy from $0-100K in 14 months"} text={
                                 "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
-                                }></Card>
+                                }>
+                                    <a href="">Read More<span id="right-arrow">&#8594;</span></a>
+                                </Card>
                         </div>
                     </WrapContainer>
                 </Section>
             </main>
 
-            <Footer>
-                
-            </Footer>
+            <Footer />
         </>
     );
 }
