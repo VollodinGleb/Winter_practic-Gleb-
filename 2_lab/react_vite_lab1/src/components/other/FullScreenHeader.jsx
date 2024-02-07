@@ -1,3 +1,6 @@
+import ArrowButton from "../buttons/ArrowButton";
+import RadiusButton from "../buttons/RadiusButton";
+
 export default function FullScreenHeader({ children }) {
     return (
         <div className="header">
@@ -12,8 +15,8 @@ export default function FullScreenHeader({ children }) {
                         culpa quisquam.
                     </p>
                     <div className="link-buttons">
-                        <a className="radius-button" href="">Vie our work</a>
-                        <a className="arrow-button" href="">Vie Pricing <span id="right-arrow">&#8594;</span></a>
+                        <RadiusButton href={"./"} text={"Vie our work"}/>
+                        <ArrowButton href={"./"} text={"Vie Pricingk"}/>
                     </div>
 
                     {children}
