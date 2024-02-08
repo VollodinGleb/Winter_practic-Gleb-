@@ -19,7 +19,7 @@ function Icon({ icon, href }) {
 
 export default function SocialIcons({ justify }) {
     return (
-        <Social className='social-icons' justify={justify}>
+        <Social justify={justify}>
             <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
             <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
             <Icon href={"https://www.facebook.com/"} icon={facebook}></Icon>
