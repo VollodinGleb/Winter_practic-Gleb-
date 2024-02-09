@@ -18,11 +18,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 20
-
+      
+      - name: Transition
+        run: cd 2_lab/react_vite_lab1/
+      
       - name: Install dependencies
-        run: |
-          cd 2_lab/react_vite_lab1
-          npm install
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
         run: npm run build
