@@ -20,7 +20,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        uses: bahmutov/npm-install@v1
+        run: cd 2_lab/react_vite_lab1 && npm install 
 
       - name: Build project
         run: cd 2_lab/react_vite_lab1 && npm run build
