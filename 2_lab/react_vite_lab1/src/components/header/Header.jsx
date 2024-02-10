@@ -21,6 +21,7 @@ export default function Header({ children }) {
                     </ul>
                 </div>
             </div>
+            <div className="spacer" style={{"height" : "80px"}}></div>
 
             {children}
             

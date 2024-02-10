@@ -25,16 +25,14 @@
     height: 100%;
 }
 
-.wrap-container > *
-{
-    margin: auto;
-}
 .header-description
 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    margin-bottom: 150px;
 }
 
 .header-description > *
