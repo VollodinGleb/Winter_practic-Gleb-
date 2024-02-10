@@ -95,28 +95,18 @@ span
 
 /* SCREEN max-height */
 @media screen and (max-height: 550px) {
+  .header-description > *
+  {
+      width: auto;
+  }
   .header-description > h1
   {
-      font-size: 20px;
+      font-size: 30px;
       margin: 0;
   }
 
   .link-buttons
   {
       margin: 0;
-  }
-}
-
-@media screen and (max-height: 400px) {
-  .wrap-container
-  {
-      align-items: baseline;
-  }
-}
-
-@media screen and (max-height: 300px) {
-  .header-description > h1
-  {
-      font-size: 20px;
   }
 }

@@ -1,12 +1,25 @@
-import { Children } from 'react';
-import './card.css';
+import {createUseStyles} from 'react-jss'
+
+const CardStyles = createUseStyles({
+    cardContainer : {
+        display: "block",
+        padding: "45px 55px 45px 55px"
+    },
+
+    CardImage : {
+        maxWidth: "100%",
+        height: "auto"
+    }
+
+})
 
 export default function Card({ image, date, title, text, children }) {
+    const classes = CardStyles()
     return (
         <div class="card">
-            <div class="card-container">
+            <div class={classes.cardContainer}>
                 <div className="conteiner-image">
-                    <img src={image} alt="img" />
+                    <img className={classes.CardImage} src={image} alt="img" />
                 </div>
                 <div className="card-description">
                     {date && (<h4>{date}</h4>)}           
