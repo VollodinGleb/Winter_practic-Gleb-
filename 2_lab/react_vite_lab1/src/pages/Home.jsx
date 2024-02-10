@@ -12,12 +12,21 @@ import computers from '../assets/blog/computers.jpg'
 import PCperson from '../assets/blog/PCperson.jpg'
 import project1 from '../assets/projects/1project.jpg'
 import Footer from '../components/footer/Footer';
+import ArrowButton from '../components/buttons/ArrowButton';
 
 export default function Home() {
     return (
         <>
             <Header>
-                <FullScreenHeader />
+                <FullScreenHeader status="act">
+                    <h1>Building stellar websites for early startups</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, 
+                        adipisicing elit. Soluta perspiciatis 
+                        enim itaque ratione esse? Officiis, 
+                        culpa quisquam.
+                    </p>
+                </FullScreenHeader>
             </Header>
 
             <main id="content">
@@ -25,7 +34,7 @@ export default function Home() {
                     <Heading className={"work-heading"}>
                         <h2>How we work</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quos totam ducimus.</p>
-                        <a href="">Get into with us</a>
+                        <ArrowButton href={"./"} text={"Get in touch with us"}/>
                     </Heading>
                     
                     <WrapContainer>

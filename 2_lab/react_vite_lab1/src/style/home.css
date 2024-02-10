@@ -240,6 +240,11 @@
     {
         font-size: 30px;
     }
+
+    .project-blocks > .card .card-container > .card-description
+    {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 330px) {
