@@ -1,6 +1,6 @@
 import {createUseStyles} from 'react-jss'
 import Menu from './Menu'
-import NavionToogle from './Navtoggle';
+import NavionToogle from './NavionToogle';
 
 const NavBarStyles = createUseStyles({
     mainNavMenu : {
