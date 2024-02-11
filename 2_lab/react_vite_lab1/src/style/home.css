@@ -1,12 +1,7 @@
-/* Cards */
-.work-cards,
-.feature-cards,
-.blog-cards
+/* Navigation */
+#nav
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    justify-items: center;
-    justify-content: center;
+    background-color: #1C1E53;
 }
 
 /* Home header */
@@ -54,36 +49,15 @@
     margin-top: 55px;
 }
 
-.radius-button
+/* Cards */
+.work-cards,
+.feature-cards,
+.blog-cards
 {
-    display: inline-block;
-    padding: 15px 10px 15px;
-    min-width: 200px;
-    border-radius: 30px;
-
-    text-align: center;
-    background-color: #FCD980;
-    color: #000;
-}
-
-.radius-button:hover
-{
-    background-color: #fdd05d;
-}
-
-.arrow-button
-{
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
-    margin-left: 25px;
-
-    text-align: center;
-    color: #fff;
-}
-
-#right-arrow
-{
-    font-size: 22px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    justify-items: center;
+    justify-content: center;
 }
 
 /* How we work */

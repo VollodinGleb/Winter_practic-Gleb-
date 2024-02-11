@@ -87,14 +87,14 @@
     color: #000;
 }
 
-.container-bottom > .menu
+#Bottom-menu
 {
     gap: 4.5em;
     margin: 0;
     padding: 0;
 }
 
-.container-bottom > .menu .item a
+#Bottom-menu a
 {
     color: #000;
 }
@@ -109,7 +109,7 @@
     {
         justify-content: center; 
     }
-    .menu
+    #Bottom-menu
     {
         display: none
     }

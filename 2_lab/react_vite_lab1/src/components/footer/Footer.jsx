@@ -1,6 +1,5 @@
 import logo from './../../assets/logo.svg';
 import SocialIcons from '../other/SocialLinks';
-// import WrapContainer from '../other/WrapContainer';
 import BottomFooter from './BottomFooter';
 import './footer.css'
 import ContactsBlock from '../other/ContactsBlock';

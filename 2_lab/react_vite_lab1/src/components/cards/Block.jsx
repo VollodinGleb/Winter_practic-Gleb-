@@ -19,14 +19,14 @@ const BlockStyles = createUseStyles({
     },
 
     BlockDescription : {
-        width: "auto",
+        width: "40%",
         margin: "auto",
         paddingBottom: "20px"
     },
 
-    '@media (min-width: 690px)': {
+    '@media (max-width: 690px)': {
         BlockDescription: {
-          width: "40%"
+          width: "auto"
         }
       }
 

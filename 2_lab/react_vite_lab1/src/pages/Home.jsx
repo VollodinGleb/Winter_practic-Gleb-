@@ -82,7 +82,7 @@ export default function Home() {
                 <Section id="Our-projects">
                     <Heading className={"projects-heading"}>
                         <h2>View our projects</h2>
-                        <ArrowButton href={"./"} color={'#2405F2'} text={"View More"}/>
+                        <ArrowButton href={"./"} color={'#000'} text={"View More"}/>
                     </Heading>
 
                     <WrapContainer>
