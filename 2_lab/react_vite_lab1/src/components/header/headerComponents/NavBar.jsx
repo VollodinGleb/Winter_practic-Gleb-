@@ -1,6 +1,6 @@
 import {createUseStyles} from 'react-jss'
 import Menu from './Menu'
-import NavionToogle from './NavionToogle';
+import NavionToogle from './NavToogle';
 
 const NavBarStyles = createUseStyles({
     mainNavMenu : {
@@ -78,7 +78,7 @@ export default function NavBar( {logo} ) {
 
                 <a className={classes.ctaButton} href="">Contact us</a>
 
-                <NavionToogle />
+                <NavToogle />
                 
             </div>
         </nav>

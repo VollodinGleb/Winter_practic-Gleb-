@@ -26,7 +26,7 @@ const ToogleStyles = createUseStyles({
     }
 })
 
-export default function NavionToogle() {
+export default function NavToogle() {
     const classes = ToogleStyles()
     return (
         <button className={classes.navigationToggle}>
