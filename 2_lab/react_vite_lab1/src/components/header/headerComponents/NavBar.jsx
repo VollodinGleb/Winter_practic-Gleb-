@@ -72,7 +72,7 @@ export default function NavBar( {logo} ) {
                 <img src={logo} alt="logo" className={classes.logo}/>
                 <div className={classes.navContainer}>
                     
-                    <Menu />
+                    <Menu useFor="header" />
                 
                 </div>
 
