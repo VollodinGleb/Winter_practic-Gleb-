@@ -2,57 +2,85 @@ import { createUseStyles } from "react-jss";
 import ArrowButton from "../buttons/ArrowButton";
 import RadiusButton from "../buttons/RadiusButton";
 
-// const FullScreenHeaderStyles = createUseStyles({
-//     header : {
-//         color: props => props.color,
-//         height: props => props.height
-//     },
+const FullScreenHeaderStyles = createUseStyles({
+    header : {
+        color: props => props.color,
+        height: props => props.height
+    },
     
-//     wrapContainer : {
-//         display: "flex",
-//         justifyContent: "center",
-//         flexWrap: "wrap",
-//         alignItems: "center",
-//         height: "100%"
-//     },
+    wrapContainer : {
+        display: "flex",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        alignItems: "center",
+        height: "100%"
+    },
 
-//     headerDescription : {
-//         display: "flex",
-//         flexDirection: "column",
-//         justifyContent: "flex-start",
-//         alignItems: "center",
+    headerDescription : {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+        alignItems: "center",
     
-//         marginBottom: "150px",
+        marginBottom: "150px",
 
-//         '& > *': {
-//             width: "70%"
-//         },
+        '& > *': {
+            width: "70%"
+        },
 
-//         '& > h1': {
-//             fontSize: "50px",
-//             lineHeight: "50px"
-//         },
+        '& > h1': {
+            fontSize: "50px",
+            lineHeight: "50px"
+        },
 
-//         '& > p' : {
-//             color: props => props.textColor
-//         }
-//     },
+        '& > p' : {
+            color: props => props.textColor
+        },
 
-//     linkButtons : {
-//         marginTop: "55px"
-//     }
-// })
+        '@media (max-width: 1100px)': {
+            '& > *' : {
+                textAlign: "center"
+            }
+        },
+        '@media (max-width: 550px)' : {
+            '& > *' : {
+                width: "auto"
+            },
+            '& > h1' : {
+                fontSize: "30px"
+            }
+        },
+        '@media (max-height: 550px)' : {
+            '& > *' : {
+                width: "auto"
+            },
+            '& > h1' : {
+                fontSize: "30px",
+                margin: "0"
+            }
+        }
+    },
 
-export default function FullScreenHeader({ children, status }) {
-    // const classes = FullScreenHeaderStyles()
+    linkButtons : {
+        marginTop: "55px",
+        '@media (max-height: 550px)': {
+            '&': {
+                margin: "0"
+            }
+        }
+    }
+})
+
+export default function FullScreenHeader({ children, status, ...props }) {
+    const classes = FullScreenHeaderStyles({...props})
     return (
-        <div className="header">
-            <div className="wrap-container">
-                <div className="header-description">
+        <div className={classes.header}>
+            <div className={classes.wrapContainer}>
+                <div className={classes.headerDescription}>
 
                     {children}
 
-                    <div className="link-buttons" style={status === "act" ? {} : {"display": "none"}}>
+                    <div className={classes.linkButtons} style={status === "act" ? {} : {"display": "none"}}>
                         <RadiusButton href={"./"} text={"Vie our work"}/>
                         <ArrowButton href={"./"} text={"Vie Pricingk"} spacing={"25px"}/>
                     </div>
@@ -62,8 +90,3 @@ export default function FullScreenHeader({ children, status }) {
         </div>
     );
 }
-// FullScreenHeader.defaultProps = {
-//     color: '#fff',
-//     height: '100vh',
-//     textColor: '#BBBBCB'
-// }
