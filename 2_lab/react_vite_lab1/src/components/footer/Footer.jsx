@@ -3,7 +3,6 @@ import logo from './../../assets/logo.svg';
 import SocialIcons from '../other/SocialLinks';
 import BottomFooter from './BottomFooter';
 import ContactsBlock from '../other/ContactsBlock';
-import './footer.css'
 
 const FooterStyles = createUseStyles({
     footer : {
@@ -17,7 +16,11 @@ const FooterStyles = createUseStyles({
         gridTemplateColumns: "repeat(auto-fit, minmax(20em, 1fr))",
         gap: "2em",
         marginTop: "30px",
-        paddingTop: "30px"   
+        paddingTop: "30px",
+        
+        '@media (max-width: 330px)' : {
+            gridTemplateColumns: "repeat(auto-fit, minmax(10em, 1fr))"
+        }
     },
 
     discription : {
@@ -27,6 +30,10 @@ const FooterStyles = createUseStyles({
 
         '& > p' : {
             color: "#BBBBCB"
+        },
+        
+        '@media (max-width: 690px)' : {
+            width: "auto"
         }
     },
     
@@ -39,6 +46,14 @@ const FooterStyles = createUseStyles({
 
         '& > p' : {
             color: "#BBBBCB"
+        },
+
+        '@media (max-width: 690px)' : {
+            width: "auto",
+            
+            '& > ul': {
+                justifyContent: "center"
+            }
         }
     },
 })
@@ -46,7 +61,7 @@ const FooterStyles = createUseStyles({
 export default function Footer() {
     const classes = FooterStyles()
     return (
-        <footer id="footer" className={classes.footer}>
+        <footer id="FooterID" className={classes.footer}>
             <div>
                 <div className={classes.weightWrap}>
                     <div className={classes.discription}>
