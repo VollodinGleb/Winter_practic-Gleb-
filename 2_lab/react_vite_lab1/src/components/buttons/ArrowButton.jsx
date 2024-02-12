@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Button = styled.a`
     display: inline-block;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 0px;;
     margin-left: ${(props) => props.spacing || "0px"};
     text-align: center;
     color: ${(props) => props.color || "#fff"};

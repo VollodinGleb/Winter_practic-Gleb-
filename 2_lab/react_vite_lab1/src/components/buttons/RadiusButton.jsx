@@ -8,7 +8,11 @@ const useStyles = createUseStyles({
         borderRadius: '30px',
         textAlign: 'center',
         backgroundColor: '#FCD980',
-        color: '#000'
+        color: '#000',
+
+        '&:hover': {
+            backgroundColor: "#fdd05d"
+        }
     }
 })
 

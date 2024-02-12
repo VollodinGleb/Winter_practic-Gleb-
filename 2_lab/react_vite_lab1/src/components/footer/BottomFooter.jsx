@@ -8,7 +8,7 @@ export default function BottomFooter() {
                     <span>Copyright 2022, Finsweet.com</span>
                 </div>
                 
-                <Menu />
+                <Menu id="Bottom-menu" />
             
             </div>
         </div>
