@@ -1,6 +1,5 @@
-#nav
-{
-    background-color: #F4F6FC;
+.headerDescription-d4-0-2-21{
+    text-align: center;
 }
 
 .projects-cards
@@ -27,6 +26,12 @@
 #cta-section > .container
 {
     text-align: center;
+}
+
+@media screen and (max-width: 1009px) {
+    .projects-cards .card > div {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 690px) { 

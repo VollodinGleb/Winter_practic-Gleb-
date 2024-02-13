@@ -1,22 +1,18 @@
-import Header from '../components/header/Header'
+import Header from '../components/header/Header';
 import FullScreenHeader from '../components/other/FullScreenHeader';
 // import '../style/home.css'
 import Footer from '../components/footer/Footer';
 
 export default function AboutUs() {
-    return (
-        <>
-            <Header>
-                <FullScreenHeader />
-            </Header>
+  return (
+    <>
+      <Header>
+        <FullScreenHeader />
+      </Header>
 
-            <main id="content">
+      <main id="content"></main>
 
-            </main>
-
-            <Footer>
-                
-            </Footer>
-        </>
-    );
+      <Footer></Footer>
+    </>
+  );
 }
