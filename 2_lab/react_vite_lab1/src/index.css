@@ -23,6 +23,11 @@ body
   flex-direction: column;
 }
 
+h1
+{
+    font-size: 55px;
+    line-height: 50px;
+}
 h2
 {
     font-size: 48px;

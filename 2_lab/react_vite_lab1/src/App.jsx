@@ -5,8 +5,8 @@ import Portfolio from './pages/Portfolio'
 export default function App() {
   return (
     <>
-      <Home />
-      {/* <Portfolio /> */}
+      {/* <Home /> */}
+      <Portfolio />
     </>
   );
 }
