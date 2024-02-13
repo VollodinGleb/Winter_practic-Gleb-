@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <>
             <Header>
-                <FullScreenHeader status="act">
+                <FullScreenHeader status="act" color={"#fff"} height={"100vh"} textColor={"#BBBBCB"}>
                     <h1>Building stellar websites for early startups</h1>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, 

@@ -70,9 +70,6 @@ span
   {
     font-size: 35px;
   }
-  .wrap-heading {
-    width: auto;
-  }
 }
 
 @media screen and (max-width: 690px) {
@@ -92,22 +89,4 @@ span
         font-size: 25px;
         margin: 0;
     }
-}
-
-/* SCREEN max-height */
-@media screen and (max-height: 550px) {
-  .header-description > *
-  {
-      width: auto;
-  }
-  .header-description > h1
-  {
-      font-size: 30px;
-      margin: 0;
-  }
-
-  .link-buttons
-  {
-      margin: 0;
-  }
 }
