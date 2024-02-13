@@ -1,0 +1,22 @@
+.projects-cards
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media screen and (max-width: 690px) { 
+    .projects-cards {
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projects-cards {
+        grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+
+    }
+}
