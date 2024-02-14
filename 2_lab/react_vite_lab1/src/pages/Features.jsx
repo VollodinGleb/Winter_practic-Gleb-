@@ -1,11 +1,11 @@
 import FullScreenHeader from '../components/other/FullScreenHeader';
 
-export default function Blog() {
+export default function Features() {
   return (
     <>
       <FullScreenHeader textCenter={'center'}>
-        <h1>Our Blog</h1>
-        <p>Something about Blog !)</p>
+        <h1>Features</h1>
+        <p>Something about features #)</p>
       </FullScreenHeader>
       <main id="content"></main>
     </>

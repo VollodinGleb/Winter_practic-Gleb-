@@ -67,19 +67,19 @@ export default function Menu({ id, useFor }) {
         <NavLink to="/winter-practic/">Home</NavLink>
       </li>
       <li className={classes.item}>
-        <NavLink to="/winter-practic/portfolio/">About Us</NavLink>
+        <NavLink to="/winter-practic/portfolio/">Portfolio</NavLink>
       </li>
       <li className={classes.item}>
-        <a href="">Features</a>
+        <NavLink to="/winter-practic/features/">Features</NavLink>
       </li>
       <li className={classes.item}>
-        <a href="">Pricing</a>
+        <NavLink to="/winter-practic/pricing/">Pricing</NavLink>
       </li>
       <li className={classes.item}>
-        <a href="">FAQ</a>
+        <NavLink to="/winter-practic/faq/">FAQ</NavLink>
       </li>
       <li className={classes.item}>
-        <a href="">Blog</a>
+        <NavLink to="/winter-practic/blog/">Blog</NavLink>
       </li>
     </ul>
   );
