@@ -1,10 +1,13 @@
 import { createUseStyles } from 'react-jss';
-import SocialIcons from '../other/SocialLinks';
+import SocialContainer from '../other/SocialLinks';
 import BottomFooter from './BottomFooter';
 import ContactsBlock from '../other/ContactsBlock';
 import Icon from '../other/Icon';
 import logo from './../../assets/logo.svg';
 import facebook from '../../assets/social/facebook.svg';
+import twitter from '../../assets/social/twitter.svg';
+import insta from '../../assets/social/insta.svg';
+import linkIN from '../../assets/social/linkIN.svg';
 
 const FooterStyles = createUseStyles({
   footer: {
@@ -81,12 +84,12 @@ export default function Footer() {
               your UX/UI design challenges.
             </p>
 
-            <SocialIcons>
+            <SocialContainer>
               <Icon href={'https://www.facebook.com/'} icon={facebook} />
-              <Icon href={'https://www.facebook.com/'} icon={facebook} />
-              <Icon href={'https://www.facebook.com/'} icon={facebook} />
-              <Icon href={'https://www.facebook.com/'} icon={facebook} />
-            </SocialIcons>
+              <Icon href={'https://www.facebook.com/'} icon={twitter} />
+              <Icon href={'https://www.facebook.com/'} icon={insta} />
+              <Icon href={'https://www.facebook.com/'} icon={linkIN} />
+            </SocialContainer>
 
             <ContactsBlock />
           </div>

@@ -34,13 +34,13 @@ const InputStyles = createUseStyles({
 export default function Input({ choose, name, placeholder }) {
   const classes = InputStyles();
   return (
-    <label className={classes.label} htmlFor="">
+    <label className={classes.label}>
       <p>{name}</p>
 
       {choose === 'input' ? (
         <input type="text" placeholder={placeholder} />
       ) : (
-        <textarea name="" id="" cols="30" rows="10" placeholder={placeholder}></textarea>
+        <textarea cols="30" rows="10" placeholder={placeholder}></textarea>
       )}
     </label>
   );

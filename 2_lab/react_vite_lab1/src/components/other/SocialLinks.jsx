@@ -11,6 +11,6 @@ const Social = styled.ul`
   color: #000;
 `;
 
-export default function SocialIcons({ justify, children }) {
+export default function SocialContainer({ justify, children }) {
   return <Social justify={justify}>{children}</Social>;
 }
