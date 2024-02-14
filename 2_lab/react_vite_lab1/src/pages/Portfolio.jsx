@@ -16,7 +16,7 @@ export default function Portfolio() {
   return (
     <>
       <Header>
-        <FullScreenHeader backColor={'#F4F6FC'} textAlign={'center'}>
+        <FullScreenHeader backColor={'#F4F6FC'} textCenter={'center'}>
           <h3>What we created</h3>
           <h1>Our Work Portfolio</h1>
           <p>

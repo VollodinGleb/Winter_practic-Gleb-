@@ -7,7 +7,6 @@ const FullScreenHeaderStyles = createUseStyles({
     backgroundColor: props => props.backColor,
     color: props => props.color,
     height: props => props.height,
-    textAlign: props => props.textCenter,
 
     '@media (max-width: 725px)': {
       '&': {
@@ -30,7 +29,12 @@ const FullScreenHeaderStyles = createUseStyles({
     justifyContent: 'flex-start',
     alignItems: 'center',
 
+    textAlign: props => props.textCenter,
     marginBottom: props => props.marginBottom,
+
+    '& > p': {
+      color: props => props.textColor,
+    },
 
     '& > *': {
       width: '70%',
@@ -39,10 +43,6 @@ const FullScreenHeaderStyles = createUseStyles({
     '& > h1': {
       fontSize: '50px',
       lineHeight: '50px',
-    },
-
-    '& > p': {
-      color: props => props.textColor,
     },
 
     '@media (max-width: 1100px)': {
