@@ -7,8 +7,7 @@
 ### 1. Lab (HTML/CSS/JS)
 
 - Choose one of the templates.
-
-* My chosen template:
+  (My chosen template):
   https://www.figma.com/file/BfTFY6Q602u4vdZqwfZzom/Client-First-Template-9-(Community)?node-id=706%3A667
 
 - Create a small website using HTML/CSS/JS tools.
