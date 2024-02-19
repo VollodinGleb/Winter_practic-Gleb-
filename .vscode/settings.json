@@ -1,5 +1,5 @@
 {
-    "CodeGPT.apiKey": "CodeGPT Plus Beta",
-    "files.autoSave": "onFocusChange",
-    "editor.formatOnSave": true
+  "CodeGPT.apiKey": "CodeGPT Plus Beta",
+  "files.autoSave": "onFocusChange",
+  "editor.formatOnSave": true
 }
