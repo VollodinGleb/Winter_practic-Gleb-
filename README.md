@@ -15,9 +15,11 @@
 
 ## 2. Lab (Intro to React)
 
-- You need to create a website like 1 lab
+You need to create a website like 1 lab
 
 - Create a new React app
+
+- Partition into components
 
 ### Installation
 
@@ -25,3 +27,7 @@
 2. `cd 2_lab/react_vite_lab1`
 3. `npm install`
 4. `npm run dev`
+
+# Deployed react-app in Github Pages
+
+https://vollodingleb.github.io/winter-practic/
