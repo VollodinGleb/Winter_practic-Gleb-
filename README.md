@@ -16,7 +16,7 @@
 
 ### Installation
 
-`git clone https://github.com/VollodinGleb/winter-practic.git`
-`cd 2_lab/react_vite_lab1`
-`npm install`
-`npm run dev`
+1. `git clone https://github.com/VollodinGleb/winter-practic.git`
+2. `cd 2_lab/react_vite_lab1`
+3. `npm install`
+4. `npm run dev`
