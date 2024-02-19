@@ -1,12 +1,10 @@
 # Winter practic Ekriative
 
-## 1. Володін Глеб
+1. Володін Глеб
+2. ЧДБК(Черкаський державний бізнес коледж)
+3. Група 3П-21
 
-## 2. ЧДБК(Черкаський державний бізнес коледж)
-
-## 3. Група 3П-21
-
-## 1. Lab (HTML/CSS/JS)
+### 1. Lab (HTML/CSS/JS)
 
 - Choose one of the templates.
   My chosen template:
