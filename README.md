@@ -30,4 +30,5 @@ You need to create a website like 1 lab
 
 # Deployed react-app in Github Pages
 
-https://vollodingleb.github.io/winter-practic/
+- 2_lab:
+  https://vollodingleb.github.io/winter-practic/
