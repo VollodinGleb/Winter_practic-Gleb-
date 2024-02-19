@@ -10,7 +10,7 @@ export default function Header({}) {
 
       <ResponsiveMenu />
 
-      <div className="spacer" style={{ height: '80px' }}></div>
+      <div className="spacer" style={{ height: '80px', backgroundColor: 'rgb(28, 30, 83)' }}></div>
     </header>
   );
 }
