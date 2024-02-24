@@ -3,7 +3,6 @@ import {Home, PaletteGalleryPage } from './pages'
 import {PalletsData} from './data'
 
 function App() {
-  console.log(PalletsData)
   return (
     <>
       <Router>
