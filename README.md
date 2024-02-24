@@ -4,7 +4,7 @@
 2. ЧДБК(Черкаський державний бізнес коледж)
 3. Група 3П-21
 
-### 1. Lab (HTML/CSS/JS)
+## 1. Lab (HTML/CSS/JS)
 
 - Choose one of the templates.
   (My chosen template):
@@ -23,10 +23,9 @@ You need to create a website like 1 lab
 
 ### Installation
 
-1. `git clone https://github.com/VollodinGleb/winter-practic.git`
-2. `cd 2_lab/react_vite_lab1`
-3. `npm install`
-4. `npm run dev`
+1. `cd 2_lab/react_vite_lab1`
+2. `npm install`
+3. `npm run dev`
 
 ### Deployed react-app in Github Pages:
 ### https://vollodingleb.github.io/winter-practic/
